@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html xml:lang='en'>
-
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Rock-paper-scissors</title>
-        <meta name="author" content="MixereQ">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">
-        <script src="jquery.min.js"></script>
-        <script src="translate.js"></script>
-
     </head>
-
     <body>
 
-        <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
 
-            <div id="en" class="lang">ENG</div>
-            <div id="pl" class="lang">PL</div>
+        <div class="scoreboard">
+            <div id="user-label" class="text">User</div>
+            <div id="computer-label" class="text">Computer</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
 
-            <header>
-                <h1 key='rock_paper_scissors' class="translate">Rock Paper Scissors</h1>
-            </header>
+        <div class="result">
+            <p></p>
+        </div>
 
-            <div class="scoreboard">
-                <div id="user-label" class="text">User</div>
-                <div id="computer-label" class="translate text" key='computer'>Computer</div>
-                <span id="user-score">0</span>:<span id="computer-score">0</span>
+        <div class="newgame"></div>
+
+        <div class="choices">
+            <div class="choice" id="rock">
+                <i class="fas fa-hand-rock"></i>
             </div>
-
-            <div class="result">
-                <p></p>
+            <div class="choice" id="paper">
+                <i class="fas fa-hand-paper"></i>
             </div>
-
-            <div class="newgame"></div>
-
-            <div class="choices">
-                <div class="choice" id="rock">
-                    <i class="fas fa-hand-rock"></i>
-                </div>
-                <div class="choice" id="paper">
-                    <i class="fas fa-hand-paper"></i>
-                </div>
-                <div class="choice" id="scissors">
-                    <i class="fas fa-hand-scissors"></i>
-                </div>
+            <div class="choice" id="scissors">
+                <i class="fas fa-hand-scissors"></i>
             </div>
+        </div>
 
-            <p id="action-message" class="translate" key='make_your_move'>Make your move.</p>
+        <p id="action-message">Make your move.</p>
 
+        <div class="footer">
+            <span>&copy; MixereQ 2019</span>
         </div>
 
         <script src="app.js"></script>
     </body>
-
 </html>
