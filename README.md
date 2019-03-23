@@ -6,5 +6,6 @@
 
 ## Known issues
 
-Missing validation of result <br />
-You can continue the game after reaching 10 points.
+Missing validation of result. <br />
+You can continue the game after reaching 10 points. <br />
+No translation for result and new game elements. <br />
