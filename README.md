@@ -2,7 +2,7 @@
 
 ## Used technologies:
 
--HTML5 -CSS -Pure JS
+-HTML5 -CSS -Pure JS -jQuery v1.3.2
 
 ## Known issues
 
