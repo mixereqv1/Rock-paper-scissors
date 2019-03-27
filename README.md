@@ -1,6 +1,6 @@
 # Rock paper scissors
 
-## [Demo](https://mixereqv1.github.io/Rock-paper-scissors
+## [Demo](https://mixereqv1.github.io/Rock-paper-scissors)
 
 ## Used technologies:
 
