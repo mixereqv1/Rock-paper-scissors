@@ -10,13 +10,19 @@ const newGame = document.querySelector('.newgame');
 const container = document.querySelector('.container');
 const actionMessage = document.querySelector('#action-message');
 
+const choicesDiv = document.querySelector('.choices');
 const rockDiv = document.querySelector('#rock');
 const paperDiv = document.querySelector('#paper');
 const scissorsDiv = document.querySelector('#scissors');
 
 let imie = prompt('Podaj swoje nazwę.');
 imie = imie.charAt(0).toUpperCase() + imie.slice(1);
-userLabel.innerText = imie;
+if(imie == ''){
+    userLabel.innerText = 'User';
+}
+else{
+    userLabel.innerText = imie;
+}
 
 function getComputerChoice() {
     const choices = ['Rock', 'Paper', 'Scissors'];
@@ -74,6 +80,8 @@ function game(userChoice) {
     }
 
     if (userScore == 10) {
+        choicesDiv.style.display = 'none';
+
         resultP.innerText = imie + ' wins! Congratulations!';
         resultP.classList.add('translate');
         resultP.key = 'wins';
@@ -87,6 +95,8 @@ function game(userChoice) {
             location.reload();
         })
     } else if (computerScore == 10) {
+        choicesDiv.style.display = 'none';
+
         resultP.innerText = 'Computer wins!';
         resultP.classList.add('translate');
         resultP.key = 'computer_wins';
