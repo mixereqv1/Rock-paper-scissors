@@ -37,7 +37,7 @@ function win(userChoice, computerChoice) {
 
     resultP.classList.add('translate');
     resultP.key = 'you_win';
-    resultP.innerText = userChoice + ' (' + imie + ') beats ' + computerChoice + ' (computer). You win!';
+    resultP.innerText = userChoice + ' (' + userLabel.innerText + ') beats ' + computerChoice + ' (computer). You win!';
 }
 
 function lose(userChoice, computerChoice) {
@@ -47,13 +47,13 @@ function lose(userChoice, computerChoice) {
 
     resultP.classList.add('translate');
     resultP.key = 'you_lost';
-    resultP.innerText = userChoice + ' (' + imie + ') loses to ' + computerChoice + ' (computer). You lost.';
+    resultP.innerText = userChoice + ' (' + userLabel.innerText + ') loses to ' + computerChoice + ' (computer). You lost.';
 }
 
 function draw(userChoice, computerChoice) {
     resultP.classList.add('translate');
     resultP.key = 'its_draw';
-    resultP.innerText = userChoice + ' (' + imie + ") equals " + computerChoice + " (computer). It's draw!";
+    resultP.innerText = userChoice + ' (' + userLabel.innerText + ") equals " + computerChoice + " (computer). It's draw!";
 }
 
 function game(userChoice) {
