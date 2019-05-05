@@ -8,4 +8,5 @@
 
 ## Known issues
 
+You can continue the game after reaching 10 points. <br />
 No translation for result element. <br />
